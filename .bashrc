@@ -11,15 +11,16 @@ BOLD="\[$(tput bold)\]"
 #PS1='\[\e[1;31m\]\u\[\e[0;0m\]@\[\e[1;31m\]\h \[\e[0;0m\]\w $ '
 PS1='\u@\h \w $ '
 alias vi="vim"
-alias backlight="xbacklight -set"
 alias poff="sudo pacman -Syu && poweroff"
 alias hr="heroku run python manage.py"
-alias werk="workon investnext && cd investnext"
 alias untargz="tar -zxvf"
 alias untar="tar -xvf"
+
+alias werk="workon investnext && cd investnext"
+alias inlogs="heroku logs --app investnext --tail"
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/code
 source /usr/bin/virtualenvwrapper.sh
 
-source ~/git-completion.bash
+source /usr/share/bash-completion/completions/git
