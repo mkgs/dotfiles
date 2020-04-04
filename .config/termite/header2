@@ -1,0 +1,9 @@
+[options]
+font = Hack 12
+allow_bold = true
+mouse_autohide = true
+cursor_blink = system
+cursor_shape = block
+
+[colors]
+
