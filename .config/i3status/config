@@ -38,7 +38,7 @@ load {
 
 disk "/" {
         # format = " hdd %avail "
-        format = " ⛁ %avail "
+        format = " hdd %avail "
 }
 
 ethernet _first_ {
@@ -49,7 +49,7 @@ ethernet _first_ {
 
 wireless _first_ {
 # if you use %speed, i3status requires root privileges
-        format_up = " %quality  %essid %ip "
+        format_up = " %quality %essid %ip "
         format_down = " no wifi "
 }
 
@@ -63,7 +63,7 @@ battery all {
         status_chr = "⚡"
         # status_bat = "bat"
         # status_bat = "☉"
-        status_bat = ""
+        status_bat = "bat"
         # status_unk = "?"
         status_unk = ""
         # status_full = ""
