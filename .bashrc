@@ -1,7 +1,6 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias prettyjson='python -m json.tool'
 
 RESET="\[$(tput sgr0)\]"
 COLOR1="\[$(tput setaf 4)\]"
@@ -15,12 +14,6 @@ alias poff="sudo pacman -Syu && poweroff"
 alias hr="heroku run python manage.py"
 alias untargz="tar -zxvf"
 alias untar="tar -xvf"
-
-alias werk="workon investnext && cd investnext"
-alias inlogs="heroku logs --app investnext --tail"
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/code
-source /usr/bin/virtualenvwrapper.sh
+alias devpush="git push origin develop && git checkout main && git merge develop && git push origin main && git checkout develop"
 
 source /usr/share/bash-completion/completions/git
