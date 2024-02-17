@@ -17,3 +17,6 @@ alias untar="tar -xvf"
 alias devpush="git push origin develop && git checkout main && git merge develop && git push origin main && git checkout develop"
 
 source /usr/share/bash-completion/completions/git
+
+alias softwhite='redshift -P -O 2400'
+alias nosoftwhite='redshift -x'
