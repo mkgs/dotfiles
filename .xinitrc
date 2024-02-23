@@ -36,3 +36,5 @@ if [ -f "$userresources" ]; then
 fi
 
 i3
+
+unclutter &
