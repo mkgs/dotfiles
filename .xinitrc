@@ -35,6 +35,7 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
-i3
+exec dbus-launch --sh-syntax --exit-with-session i3 --shmlog-size 0
 
+# may need to place in i3 config as exec --no-startup-id unclutter & ...
 unclutter &
