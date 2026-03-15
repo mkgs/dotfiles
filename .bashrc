@@ -25,3 +25,5 @@ source /usr/share/bash-completion/completions/git
 
 alias softwhite='redshift -P -O 2400'
 alias nosoftwhite='redshift -x'
+
+export PATH="$HOME/code/dotfiles/bin:$HOME/.local/bin:$PATH"
