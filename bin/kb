@@ -1,4 +1,4 @@
 #!/bin/bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-find $SCRIPT_DIR/../kb -type f | fzf --preview 'bat --style=numbers --color=always {}'
+bat $(find $SCRIPT_DIR/../kb -type f | fzf --preview 'bat --style=numbers --color=always {}')
