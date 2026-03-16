@@ -20,3 +20,12 @@ Ctrl-b w        Window selection menu
 
 ## Sessions
 Ctrl-b s        Session selection menu
+
+## Sending commands
+Run a command on a target pane:
+tmux send-keys -t [target] "[cmd]" Enter
+
+Where [target] is :[window-index].[pane-index]
+or [session-name]:[window-index].[pane-index]
+or unique pane ID found by running:
+tmux display-message -p '#{pane_id}'
