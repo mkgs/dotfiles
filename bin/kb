@@ -1,4 +1,10 @@
 #!/bin/bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-bat $(find $SCRIPT_DIR/../kb -type f | fzf --preview 'bat --style=numbers --color=always {}')
+if [ "$#" -eq 0 ]; then
+        # interactive mode
+        bat $(find $SCRIPT_DIR/../kb -type f | fzf --preview 'bat --style=numbers --color=always {}')
+else
+        # or find match
+        bat $(find $SCRIPT_DIR/../kb -type f | fzf --filter="$1" | head -n1)
+fi
