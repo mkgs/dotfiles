@@ -15,6 +15,9 @@ Ctrl+y      paste from earlier delete
 Ctrl+_      undo
 
 ## Other
-Ctrl+z      place process in background
+Ctrl+z      place process in background (stops process)
+jobs        list jobs
+bg %n       run job n in bg, or last job placed in background if no n specified
+fg %n       bring job to fg, or last job placed in bg if no n specified
 set -o vi   activate vi mode
 v           open editor in vi command mode

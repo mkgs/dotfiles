@@ -27,3 +27,6 @@ alias softwhite='redshift -P -O 2400'
 alias nosoftwhite='redshift -x'
 
 export PATH="$HOME/code/dotfiles/bin:$HOME/.local/bin:$PATH"
+
+# vi mode for bash
+set -o vi
