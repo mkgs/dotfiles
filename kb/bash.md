@@ -16,3 +16,4 @@ Ctrl+_      undo
 
 ## Other
 Ctrl+z      place process in background
+set -o vi   activate vi mode
