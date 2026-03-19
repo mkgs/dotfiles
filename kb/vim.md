@@ -67,6 +67,10 @@ Ctrl+r      redo
 
 ## Visual mode
 v           start visual mode
+V           start visual line mode
+Ctrl+v      start visual block mode
+o           move to other end of marked area
+O           move to other corner of marked area
 >           shift text right
 <           shift text left
 y           yank (copy)
