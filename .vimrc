@@ -17,7 +17,7 @@ call vundle#end()
 
 filetype plugin indent on
 
-colorscheme molokai
+colorscheme monokai_pro
 
 set relativenumber
 set t_Co=256
