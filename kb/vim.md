@@ -94,6 +94,11 @@ diw         delete current word
 :[a],[b]d   delete lines a to b
 D           delete to end of line
 x           delete character
+:reg        show contents of registers
+"xy         copy to register x
+"xp         paste from register x
+"+y         copy to system clipboard
+"+p         paste from system clipboard
 
 ## Indent
 >>          indent line
