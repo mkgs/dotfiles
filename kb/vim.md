@@ -112,3 +112,19 @@ x           delete character
 n           repeat search
 N           repeat search in opposite direction
 :%s/old/new/g   replace old with new throughout file
+
+## Tabs and Buffers
+:e file     open file in new buffer
+:bn         next buffer
+:bp         prev buffer
+:bd         close buffer
+:b#         go to buffer with index
+:ls         list buffers
+:tabnew     open file in new tab
+Ctrl+qT     move current window into new tab
+gt, gT      next or prev tab
+:tabc       close tab
+:tabo       close all tabs except this one
+Ctrl+ws     split window
+Ctrl+wv     split vertically
+Ctrl+wq     quit window
