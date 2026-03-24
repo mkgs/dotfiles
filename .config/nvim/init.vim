@@ -50,3 +50,8 @@ set foldmethod=indent
 
 nnoremap j gj
 nnoremap k gk
+
+vnoremap <C-c> "+y
+nnoremap <C-v> "+p
+inoremap <C-v> <C-r>+
+vnoremap <C-x> "+d
