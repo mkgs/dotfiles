@@ -1,20 +1,6 @@
 "vim config
 set nocompatible
 
-"vundle setup
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'scrooloose/syntastic'
-
-call vundle#end()
-
 filetype plugin indent on
 
 colorscheme monokai_pro
